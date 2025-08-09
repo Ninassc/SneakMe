@@ -1,0 +1,160 @@
+#body-quemsomos {
+    background-image: linear-gradient(90deg, #F46464 30%, #F8F2E8 20%);
+    background-repeat: repeat;
+    background-size: 100% auto;
+    background-color: #F8F2E8;
+    font-family: 'Poppins';
+}
+
+.content-quemsomos {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.imagem-pessoa {
+    margin-left: 3%
+}
+
+.imagem-pessoa img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+.apresentacao {
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 4%;
+}
+
+.titulo-apresentacao h1 {
+    font-family: 'Massive Free Bold';
+    font-size: 96px;
+    font-size: clamp(30px, 11vw, 85px);
+    font-weight: 100;
+    color: #F46464;
+}
+
+.titulo-apresentacao h2 {
+    font-family: 'Massive Free Bold';
+    font-size: 96px;
+    font-size: clamp(30px, 5vw, 60px);
+    font-weight: 100;
+    color: #403434;
+}
+
+.paragrafos-apresentacao {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 85%;
+}
+
+.paragrafos-apresentacao p {
+    font-size: clamp(14px, 0.9vw, 20px);
+}
+
+.apresentacao button {
+    font-size: clamp(18px, 1vw, 30px);
+    background-color: #F46464;
+    border: none;
+    border-radius: 30px;
+    height: 5.5vh;
+    max-width: 200px;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.apresentacao button a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.apresentacao button:hover {
+    background-color: #403434;
+}
+
+.caracteristicas {
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+
+.caracteristicas .bola {
+    border-radius: 50%;
+    max-width: 80px;
+    max-height: 80px;
+    background-color: #403434;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#star {
+    margin-bottom: 10px;
+}
+
+.caracteristicas>div {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+}
+
+.texto-caracteristicas h4 {
+    font-size: clamp(16px, 1vw, 30px);
+}
+
+.missao .texto-caracteristicas p {
+    width: 50%;
+    font-size: clamp(14px, 0.7vw, 20px);
+}
+
+.valores .texto-caracteristicas p {
+    width: 60%;
+    font-size: clamp(14px, 0.7vw, 20px);
+}
+
+@media (max-width:800px) {
+    .caracteristicas {
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+@media (max-width:550px) {
+    #body-quemsomos {
+        background-image: none;
+    }
+
+    .content-quemsomos {
+        margin-top: 5%;
+    }
+
+    .imagem-pessoa {
+        display: none;
+    }
+
+    .apresentacao {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bola {
+        width: 80px;
+        height: 80px;
+    }
+
+    .caracteristicas {
+        width: 90%;
+    }
+ 
+}

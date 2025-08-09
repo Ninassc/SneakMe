@@ -1,0 +1,217 @@
+#body-carrinho {
+    background-image: none;
+}
+
+.content-carrinho {
+    min-height: 100vh;
+}
+
+.content-carrinho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-carrinho h1 {
+    font-family: 'Massive Free Bold';
+    font-size: clamp(20px, 9vw, 96px);
+    font-weight: 100;
+    color: #F46464;
+    margin-top: 50px;
+}
+
+.carrinho-grid {
+    display: grid;
+    width: 90%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    height: 50vh;
+    margin-top: 50px;
+}
+
+.linha {
+    display: grid;
+    grid-template-columns: minmax(400px, 500px) repeat(3, minmax(50px, 200px));
+    justify-items: center;
+    align-items: center;
+    border-bottom: solid 4px #F46464;
+}
+
+.linha h4 {
+    font-size: 17px;
+}
+
+.tenis-carrinho {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 2%;
+}
+
+.tenis-carrinho img {
+    width: 30%;
+    text-align: center;
+}
+
+
+.parte-botoes {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.subtotal .sub {
+    display: flex;
+    gap: 20px;
+}
+
+.subtotal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#btnAtualizar {
+    width: 200px;
+    border-radius: 30px;
+    border: solid 1px;
+    border-color: #403434;
+    background-color: transparent;
+    font-size: clamp(10px, 1.5vw, 24px);
+    height: 6vh;
+    font-weight: bold;
+    color: #403434;
+}
+
+#btnAtualizar:hover {
+    background-color: #F46464;
+    border-color: #F8F2E8;
+}
+
+#btnAtualizar:hover a {
+    color: #F8F2E8;
+}
+
+#btnFinalizar {
+    width: 200px;
+    border-radius: 30px;
+    border: none;
+    border-color: #403434;
+    background-color: transparent;
+    font-size: clamp(10px, 1.5vw, 24px);
+    height: 6vh;
+    font-weight: bold;
+    background-color: #F46464;
+}
+
+#btnFinalizar:hover {
+    background-color: transparent;
+    border-color: #403434;
+    border: solid 1px;
+}
+
+#btnFinalizar:hover a {
+    color: #403434;
+}
+
+#btnAtualizar a {
+    color: #403434;
+    transition: 0.4s;
+}
+
+#btnFinalizar a {
+    color: #F8F2E8;
+
+}
+
+button a {
+    text-decoration: none;
+}
+
+
+@media (max-width:900px) {
+    .carrinho-grid {
+        display: grid;
+        width: 96%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        height: 60vh;
+        margin-top: 50px;
+    }
+
+    .linha {
+        display: grid;
+        grid-template-columns: minmax(100px, 300px) repeat(3, minmax(30px, 100px));
+        justify-items: center;
+        align-items: center;
+    }
+
+    .linha h4 {
+        font-size: 14px;
+    }
+
+    .parte-botoes {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .parte-botoes h4 {
+        font-size: 14px;
+    }
+
+    #btnAtualizar {
+        width: 150px;
+    }
+
+    #btnFinalizar {
+        width: 150px;
+    }
+}
+
+@media (max-width:550px) {
+    .carrinho-grid {
+        display: grid;
+        width: 96%;
+        grid-template-rows: repeat(4, 1fr);
+        justify-items: center;
+        height: 50vh;
+        margin-top: 50px;
+    }
+
+    .linha {
+        display: grid;
+        grid-template-columns: minmax(100px, 300px) repeat(3, minmax(30px, 100px));
+        justify-items: center;
+        align-items: center;
+    }
+
+    .linha h4 {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .titulo-tenis {
+        width: 40%;
+    }
+
+    .parte-botoes {
+        width: 96%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    #btnAtualizar {
+        width: 100px;
+    }
+
+    #btnFinalizar {
+        width: 100px;
+    }
+}
