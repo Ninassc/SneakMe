@@ -114,7 +114,7 @@ body {
 
     .tenis .texto-produto p,
     span {
-        font-size: clamp(8px, 1.5vw, 20px);
+        font-size: clamp(14px, 1.5vw, 20px);
     }
 
 }
@@ -125,6 +125,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 20%);
         min-height: 150vh;
+        margin-bottom: 2%;
     }
 
     .tenis .texto-produto {
@@ -132,5 +133,14 @@ body {
         top: 110%;
         text-align: center;
         width: 100%;
+    }
+
+    .tenis {
+        width: 60%;
+    }
+
+    .tenis .texto-produto p,
+    span {
+        font-size: clamp(10px, 1.5vw, 20px);
     }
 }

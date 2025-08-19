@@ -162,7 +162,6 @@ body::-webkit-scrollbar {
 }
 
 .saiba-mais {
-  color: #ffff;
   font-size: clamp(18px, 1.5vw, 24px);
   background-color: #F46464;
   border: none;
@@ -174,7 +173,14 @@ body::-webkit-scrollbar {
   position: absolute;
   margin-top: 2%;
   cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F8F2E8;
+  text-decoration: none;
 }
+
 
 .sugestao {
   position: absolute;
