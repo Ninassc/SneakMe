@@ -179,6 +179,11 @@ body::-webkit-scrollbar {
   justify-content: center;
   color: #F8F2E8;
   text-decoration: none;
+  transition: 0.4s;
+}
+
+.saiba-mais:hover {
+  background-color: #403434;
 }
 /* teste */
 
